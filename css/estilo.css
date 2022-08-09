@@ -1,0 +1,230 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.card{
+    background-color: hsl(210, 46%, 95%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_container{
+    height: 300px;
+    width: 750px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+}
+
+.main_img{
+    position: absolute;
+    height: 300px;
+    background-color: rgba(0, 255, 255, 0.164);
+    width: 310px;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.muebles{
+    height: 300px;
+}
+
+
+.card_title{
+    position: absolute;
+    font-size: 20px;
+    color: hsl(217, 19%, 35%);
+    font-family: 'Manrope', sans-serif;
+    left: 350px;
+    font-weight: bold;
+    width: 350px;
+    top: 40px;
+}
+
+.card_desc{
+    position: absolute;
+    font-family: 'Manrope', sans-serif;
+    font-size: 13px;
+    width: 350px;
+    left: 350px;
+    top: 140px;
+    color: hsl(214, 17%, 51%);
+}
+
+.profile_img{
+    position: absolute;
+    left: 350px;
+    top: 220px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.name{
+    position: absolute;
+    left: 405px;
+    top: 220px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: hsl(217, 19%, 35%);
+}
+
+.date{
+    position: absolute;
+    left: 405px;
+    top: 240px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 13px;
+    color: hsl(212, 23%, 69%);
+}
+
+#share{
+    position: absolute;
+    display: block;
+    left: 670px;
+    top: 220px;
+    padding: 7px 8px;
+    border-radius: 50%;
+}
+
+#redes{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    background-color: hsl(217, 19%, 35%);
+    width: 250px;
+    padding: 18px;
+    border-radius: 10px;
+    left: 555px;
+    top: 145px;
+    display: none;
+}
+
+#redes .p{
+    font-family: 'Manrope', sans-serif;
+    letter-spacing: 5px;
+    font-size: 13px;
+    color: hsl(212, 23%, 69%);
+}
+
+.flecha{
+    position: absolute;
+    width: 0;
+	height: 0;
+    left: 675px;
+    top: 200px;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 15px solid hsl(217, 19%, 35%);
+    display: none;
+}
+
+/* Activador */
+
+
+.color{
+    background-color: hsl(210, 46%, 95%);
+}
+.cambioColor{
+    background-color:hsl(214, 17%, 51%);
+}
+
+.anegro{
+    filter: brightness(0) saturate(100%);
+}
+
+.ablanco{
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(275deg) brightness(200%) contrast(101%);
+}
+
+
+/* Responsive */
+@media (max-width: 375px){
+
+    .card_container{
+        display: flex;
+        flex-wrap: wrap;
+        width: 310px;
+        height: 540px;
+    }
+
+    .main_img{
+        height: 250px;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 10px;
+    }
+
+    .card_title{
+        left: 35px;
+        font-size: 15px;
+        width: 250px;
+        top: 280px;
+    }
+    
+    .card_desc{
+        font-size: 13px;
+        width: 250px;
+        left: 35px;
+        top: 370px;
+    }
+
+    .profile_img{
+        left: 35px;
+        top: 490px;
+        width: 40px;
+    }
+    
+    .name{
+        left: 90px;
+        top: 490px;
+    }
+
+    .date{
+        left: 90px;
+        top: 510px;
+    }
+
+    #share{
+        left: 250px;
+        top: 495px;
+        z-index: 1;
+    }
+
+    #redes{
+        width: 310px;
+        left: 0px;
+        top: 480px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        justify-content:flex-start;
+        align-items: center;
+    }
+
+    .flecha{
+        width: 310px;
+        left: 0px;
+        top: 480px;
+    }
+
+    .p{
+        margin-left: 5px;
+    }
+    
+    .pinterest{
+        margin-left: 15px;
+    }
+
+    .twitter{
+        margin-left: 25px;
+    }
+
+    .facebook{
+        margin-left: 20px;
+    }
+
+}
